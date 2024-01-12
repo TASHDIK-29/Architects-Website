@@ -92,6 +92,47 @@ nav .anchor a {
     }
 }
 
+main{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.teams-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.teams-container > div{
+    width: 50%;
+}
+
+
+.teams-container .team-imgs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    /* border: 2px solid red; */
+}
+
+
+.teams-container .team-imgs img{
+    width: 100%;
+}
+
+.teams-features h1{
+    font-size: 2rem;
+}
+
+
+.teams-features p{
+    font-size: 1.25rem;
+}
+
+
+
+
 /* medium */
 
 @media screen and (min-width:576px) and (max-width:980px) {
