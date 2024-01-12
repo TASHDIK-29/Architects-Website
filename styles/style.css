@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.primary-btn {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    color: wheat;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    ;
+}
+
+.banner-btn {
+    text-align: center;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .anchor a {
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.banner-text {
+    width: 45%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.banner-img {
+    width: 75%;
+    margin: 20px auto;
+}
+
+
+.banner-img img {
+    width: 100%;
+}
+
+.nav-heading {
+    font-size: 1rem;
+}
+
+
+.banner-text h1 {
+    font-size: 3.5rem;
+}
+
+
+/* Responsive section */
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+
+    .banner-text {
+        width: 80%;
+        margin: 20px auto;
+
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .anchor {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .primary-btn {
+        border-radius: 8px;
+        background: #FF900E;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+
+/* medium */
+
+@media screen and (min-width:576px) and (max-width:980px) {
+    .banner-text {
+        width: 80%;
+        margin: 20px auto;
+
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+
+    .primary-btn {
+        border-radius: 8px;
+        background: #FF900E;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
