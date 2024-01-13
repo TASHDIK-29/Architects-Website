@@ -134,7 +134,7 @@ main {
     /* border: 2px solid red; */
     height: 80px;
     padding: 20px;
-    position: relative;
+    position: absolute;
     text-align: center;
     border-radius: 8px;
     background: #FF900E;
@@ -144,12 +144,34 @@ main {
 
 }
 
-.sec-2{
+.sec-2 {
     /* border: 2px solid red; */
     height: 800px;
 }
 
+.sec-3{
+    width: 100%;
+    margin-top: 100px;
+}
 
+.sec-3-text {
+    width: 40%;
+}
+
+.sec-3-img {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 100px;
+    gap: 100px;
+}
+
+.sec-3-img .item {
+    width: 22%;
+    padding: 20px 50px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
 
 /* Responsive section */
 
@@ -167,10 +189,11 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,.sec-3-img {
         flex-direction: column;
     }
-    .features-container{
+
+    .features-container {
         flex-direction: column-reverse;
     }
 
@@ -196,12 +219,31 @@ main {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .sec-2 .features-ex{
+
+    .sec-2 .features-ex {
         width: 60%;
         transform: translate(-70%, -80%);
         margin: 10px auto;
     }
-    
+    .sec-3{
+        margin-top: 1000px;
+    }
+    .sec-3-text{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    .sec-3-text>div{
+       text-align: center;
+    }
+    .sec-3-img {
+        align-items: center;
+    }
+    .sec-3-img .item{
+        width: 100%;
+        margin-top: 0px;
+    }
+
 }
 
 
@@ -216,15 +258,15 @@ main {
 
     }
 
-    nav {
+    nav ,.sec-3-img{
         flex-direction: column;
     }
 
-    .features-container{
+    .features-container {
         flex-direction: column-reverse;
     }
 
-    .sec-2 .features-ex{
+    .sec-2 .features-ex {
         transform: translate(150%, -700%);
     }
 
@@ -233,5 +275,22 @@ main {
         background: #FF900E;
         padding: 10px 15px;
         font-size: 1rem;
+    }
+    .sec-3{
+        margin-top: 900px;
+    }
+    .sec-3-text{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    .sec-3-text>div{
+       text-align: center;
+    }
+    .sec-3-img {
+        align-items: center;
+    }
+    .sec-3-img .item{
+        margin-top: 0px;
     }
 }
